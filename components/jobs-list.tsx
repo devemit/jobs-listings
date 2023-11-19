@@ -31,13 +31,15 @@ export default function JobsList({ jobs }: any) {
             }}
             type='text'
             placeholder='Filter jobs here ...'
-            className='px-2 py-1 w-full'
+            className='px-2 py-1 w-full md:w-1/2 lg:w-1/4'
           />
         </div>
       </section>
-      {filteredJobs.map((job: JobProps) => (
-        <JobSingle key={job.id} job={job} />
-      ))}
+      <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 space-y-6 md:space-y-0'>
+        {filteredJobs.map((job: JobProps) => (
+          <JobSingle key={job.id} job={job} />
+        ))}
+      </div>
     </main>
   );
 }
