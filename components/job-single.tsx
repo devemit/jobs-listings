@@ -9,22 +9,11 @@ export default function JobSingle({ job }: Job) {
           <Image src={job.logo} alt='logo' fill />
         </div>
         <div className='flex space-x-2 items-center'>
-          <p
-            className='text-primary
-          '
-          >
-            {job.company}
-          </p>
-          <p
-            className='rounded-full text-xs p-1  flex items-center justify-center text-secondarycyan bg-primary font-semibold
-          '
-          >
+          <p className='text-primary'>{job.company}</p>
+          <p className='rounded-full text-xs p-1  flex items-center justify-center text-secondarycyan bg-primary font-semibold'>
             NEW!
           </p>
-          <p
-            className='rounded-full p-1 text-xs flex items-center justify-center text-secondarycyan font-semibold bg-[#333]
-          '
-          >
+          <p className='rounded-full p-1 text-xs flex items-center justify-center text-secondarycyan font-semibold bg-[#333]'>
             FEATURED
           </p>
         </div>
